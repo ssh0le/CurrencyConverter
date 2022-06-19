@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fancy Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="basic-currency">
-            
+            sadasd
         </div>
     </header>
-    <div class="section--wrapper">
+    <div class="main-wrapper">
         <section class="main">
             <div class="converter">
-                <div class="currency" id="from-wrapper">
-                    <label for="from">From</label>
-                    <div class="currency-list">
-
+                <div class="common-converter">
+                    <div class="currency" id="from-wrapper">
+                        <div class="currency-label">
+                            <label for="from">From</label>
+                            <div class="currency-list">
+    
+                            </div>
+                        </div>
+                        <input type="text" id="from" class="currency-input">
                     </div>
-                    <input type="text" id="from" class="currency-input">
-                </div>
-                <div class="currency" id="to-wrapper">
-                    <label for="to">To</label>
-                    <div class="currency-list">
-                        
+                    <img src="assets\icons\switch.png" alt="" id="switch">
+                    <div class="currency" id="to-wrapper">
+                        <div class="currency-label">
+                            <label for="to">To</label>
+                            <div class="currency-list">
+    
+                            </div>
+                        </div>
+                        <input type="text" id="to" class="currency-input">
                     </div>
-                    <input type="text" id="to" class="currency-input">
                 </div>
-                <div class="currency-terminal">
+                <div class="converter-terminal">
                     <label for="terminal">Terminal</label>
                     <input type="text" id="terminal">
                 </div>
@@ -48,4 +58,5 @@
         </section>
     </div>
 </body>
+
 </html>
