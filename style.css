@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 80px;
+    background-color: rgb(126, 126, 213);
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.main {
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    width: 80%;
+    height: 40vh;
+}
+
+.converter {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-around;
+}
+
+.currency {
+    min-width: 40%;
+}
+
+.currency input, .converter-terminal input {
+    width: 100%;
+    border-radius: 10px;
+    border-width: 1px;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    padding: 3px 6px;
+}
+
+#terminal {
+    width: 100%;
+}
+
+.common-converter {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    display: block;
+}
+
+#switch {
+    height: 30px;
+    width: 30px;
+    align-self: flex-end;
+    display: block;
+    padding: 0 10px 5px;
+}
+
+.rates {
+    width: 40%;
+}
+
+.main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
