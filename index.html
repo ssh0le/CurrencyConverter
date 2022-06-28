@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fancy Currency Converter</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/icons/dollar.png">
 </head>
 
 <body>
     <header>
         <div class="basic-currency">
-            sadasd
+            <div class="currency-abbr"></div>
         </div>
     </header>
     <div class="main-wrapper">
@@ -22,21 +23,29 @@
                     <div class="currency" id="from-wrapper">
                         <div class="currency-label">
                             <label for="from">From</label>
-                            <div class="currency-list">
-    
+                            <div class="from-currency">
+                                <div class="currency-abbr"></div>
+                                <div class="currency-list-wrapper">
+                                    <select name="" id="from-currency-list"></select>
+                                </div>
                             </div>
                         </div>
-                        <input type="text" id="from" class="currency-input">
+                        <input type="number" id="from" class="currency-input">
                     </div>
+                    <div class="switch-wrapper">
                     <img src="assets\icons\switch.png" alt="" id="switch">
+                    </div>
                     <div class="currency" id="to-wrapper">
                         <div class="currency-label">
                             <label for="to">To</label>
-                            <div class="currency-list">
-    
+                            <div class="to-currency">
+                                <div class="currency-abbr"></div>
+                                <div class="currency-list-wrapper">
+                                    <select name="" id="to-currency-list"></select>
+                                </div>
                             </div>
                         </div>
-                        <input type="text" id="to" class="currency-input">
+                        <input type="number" id="to" class="currency-input">
                     </div>
                 </div>
                 <div class="converter-terminal">
@@ -45,18 +54,25 @@
                 </div>
             </div>
             <div class="rates">
-
-                <div class="currency-rate">
-                    <div class="currency-sign">
-
+                <div class="rates-header">
+                    <div class="rates-label">
+                        <label for="">Exchange rates</label>
+                        <div class="basic-currency">
+                            
+                        </div>
                     </div>
-                    <div class="currency-equivalent">
-
+                    <div class="header-currency">
+                        Currency
+                    </div>
+                    <div class="header-equivalent">
+                        Amount
                     </div>
                 </div>
+                <div class="rates-list"></div>
             </div>
         </section>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
