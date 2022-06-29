@@ -101,10 +101,10 @@ function createElement(tag, classList) {
 }
 
 function createRate(currency, baseCurrency) {
-    let rate = createElement('div', 'currency-rate');
-    let currencyAbbr = createElement('div', 'currency-abbr');
+    let rate = createElement('tr', 'currency-rate');
+    let currencyAbbr = createElement('td', 'currency-abbr');
     currencyAbbr.textContent += currency;
-    let currencyEquivalent = createElement('div', 'currency-equivalent');
+    let currencyEquivalent = createElement('td', 'currency-equivalent');
     let amount = rates[currency] / rates[baseCurrency];
     currencyEquivalent.textContent += amount.toFixed(2);
     rate.append(currencyAbbr, currencyEquivalent);

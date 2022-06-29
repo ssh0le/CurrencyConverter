@@ -23,7 +23,6 @@
                         <div class="currency-label">
                             <label for="from">From</label>
                             <div class="from-currency">
-                                <div class="currency-abbr"></div>
                                 <div class="currency-list-wrapper">
                                     <select name="" id="from-currency-list"></select>
                                 </div>
@@ -35,7 +34,6 @@
                         <div class="currency-label">
                             <label for="to">To</label>
                             <div class="to-currency">
-                                <div class="currency-abbr"></div>
                                 <div class="currency-list-wrapper">
                                     <select name="" id="to-currency-list"></select>
                                 </div>
@@ -47,7 +45,7 @@
                 <div class="converter-terminal">
                     <label for="terminal">Terminal</label>
                     <input type="text" id="terminal" class="input-field">
-                    <button id="terminal-button">Convert</button>
+                    <button id="terminal-button">Complete</button>
                 </div>
             </div>
             <div class="rates">
@@ -56,14 +54,16 @@
                         <label for="">Exchange rates</label>
                         <div class="basic-currency"></div>
                     </div>
-                    <div class="header-currency">
-                        Currency
-                    </div>
-                    <div class="header-equivalent">
-                        Amount
-                    </div>
+                    <table>
+                        <tr>
+                            <td class="header-currency">Currency</td>
+                            <td class="header-equivalent">Amount</td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="rates-list"></div>
+                <div class="rates-wrapper">
+                    <table class="rates-list"></table>
+                </div>
             </div>
         </section>
     </div>

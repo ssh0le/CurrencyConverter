@@ -54,10 +54,16 @@ header select {
 .common-converter select {
     font-size: 1.9rem;
     border-radius: 5px;
+    margin: 0;
 }
 
 .currency {
     width: 45%;
+}
+
+.currency-list-wrapper {
+    display: flex;
+    align-items: center;
 }
 
 .input-field {
@@ -87,7 +93,7 @@ header select {
 }
 
 #terminal {
-    width: 75%;
+    width: 70%;
 }
 
 .common-converter {
@@ -124,37 +130,38 @@ label {
 }
 
 .currency-rate {
-    display: flex;
-    justify-content: space-evenly;
     font-size: 2rem;
 }
 
-.rates-list {
+.rates-header table {
+    width: 100%;
+}
+
+.header-currency, .currency-abbr {
+    width: 40%;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.header-equivalent, .currency-equivalent {
+    width: 50%;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.rates-wrapper {
     width: 100%;
     overflow: auto;
     height: 80%;
 }
 
+.rates-list {
+    width: 100%;
+    height: 80%;
+}
+
 .currency-rate:nth-child(2n) {
     background-color: rgb(242, 225, 239);
-}
-
-.currency-rate .currency-abbr {
-    width: 30%;
-    padding-left: 10%;
-}
-
-.currency-equivalent, .header-equivalent {
-    width: 40%;
-    padding-left: 5%;
-}
-
-.header-currency {
-    width: 50%;
-}
-
-.header-equivalent {
-    padding-right: 5%;
 }
 
 .rates-header {
@@ -173,4 +180,46 @@ label {
 .common-converter .currency-abbr {
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    html, body {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 9px;
+    }
+    .main {
+        flex-wrap: wrap;
+        font-size: 2.5rem;
+    }
+
+    .converter {
+        min-width: 90%;
+        height: 40%;
+    }
+
+    .rates {
+        width: 90%;
+        height: 40%;
+    }
+
+    #terminal {
+        width: 57%;
+    }
+
+    .common-converter select {
+        font-size: 1.7rem;
+    }
+
+    #from-wrapper {
+        width: 50%;
+    }
+
+    #to-wrapper {
+        width: 40%;
+    }
 }
