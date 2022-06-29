@@ -12,9 +12,8 @@
 
 <body>
     <header>
-        <div class="basic-currency">
-            <div class="currency-abbr"></div>
-        </div>
+        Basic currency:
+            <select name="" id="basic-currency-list"></select>
     </header>
     <div class="main-wrapper">
         <section class="main">
@@ -30,10 +29,7 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="number" id="from" class="currency-input">
-                    </div>
-                    <div class="switch-wrapper">
-                    <img src="assets\icons\switch.png" alt="" id="switch">
+                        <input type="number" id="from" class="input-field">
                     </div>
                     <div class="currency" id="to-wrapper">
                         <div class="currency-label">
@@ -45,21 +41,20 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="number" id="to" class="currency-input">
+                        <input type="number" id="to" class="input-field">
                     </div>
                 </div>
                 <div class="converter-terminal">
                     <label for="terminal">Terminal</label>
-                    <input type="text" id="terminal">
+                    <input type="text" id="terminal" class="input-field">
+                    <button id="terminal-button">Convert</button>
                 </div>
             </div>
             <div class="rates">
                 <div class="rates-header">
                     <div class="rates-label">
                         <label for="">Exchange rates</label>
-                        <div class="basic-currency">
-                            
-                        </div>
+                        <div class="basic-currency"></div>
                     </div>
                     <div class="header-currency">
                         Currency

@@ -9,7 +9,18 @@ header {
     background-color: rgb(126, 126, 213);
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 2rem;
+}
+
+header  {
+    font-size: 2.5rem;
+    color: white;
+}
+
+header select {
+    font-size: 2rem;
+    margin-left: 10px;
 }
 
 .main-wrapper {
@@ -46,10 +57,10 @@ header {
 }
 
 .currency {
-    min-width: 40%;
+    width: 45%;
 }
 
-.currency input, .converter-terminal input {
+.input-field {
     width: 100%;
     border-radius: 10px;
     border-width: 1px;
@@ -59,8 +70,24 @@ header {
     padding: 3px 10px;
 }
 
+.converter-terminal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.converter-terminal label {
+    min-width: 100%;
+}
+
+.converter-terminal button {
+    font-size: 2rem;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
 #terminal {
-    width: 100%;
+    width: 75%;
 }
 
 .common-converter {
@@ -75,21 +102,6 @@ label {
 .currency-label {
     display: flex;
     justify-content: space-between;
-}
-
-.switch-wrapper {
- display: flex;
- justify-content: center;
-}
-
-#switch {
-    height: 30px;
-    width: 30px;
-    align-self: flex-end;
-    display: block;
-    padding: 8px;
-    /* transition: all 0.3s;
-    animation-direction: alternate; */
 }
 
 .rates {
@@ -161,14 +173,4 @@ label {
 .common-converter .currency-abbr {
     display: flex;
     align-items: center;
-}
-
-.rotate {
-    animation: rotate 0.3s;
-    animation-direction: normal;
-}
-
-@keyframes rotate {
-    from {}
-    to {transform: rotate(-180deg);}
 }
