@@ -207,19 +207,7 @@ label {
         height: 40%;
     }
 
-    #terminal {
-        width: 57%;
-    }
-
     .common-converter select {
         font-size: 1.7rem;
-    }
-
-    #from-wrapper {
-        width: 50%;
-    }
-
-    #to-wrapper {
-        width: 40%;
     }
 }
