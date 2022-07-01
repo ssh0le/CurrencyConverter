@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/icons/dollar.png">
+</head>
+
+<body>
+    <header>
+        Basic currency:
+            <select name="" id="basic-currency-list"></select>
+    </header>
+    <div class="main-wrapper">
+        <section class="main">
+            <div class="converter">
+                <div class="common-converter">
+                    <div class="currency" id="from-wrapper">
+                        <div class="currency-label">
+                            <label for="from">From</label>
+                            <div class="from-currency">
+                                <div class="currency-list-wrapper">
+                                    <select name="" id="from-currency-list"></select>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="number" id="from" class="input-field">
+                    </div>
+                    <div class="currency" id="to-wrapper">
+                        <div class="currency-label">
+                            <label for="to">To</label>
+                            <div class="to-currency">
+                                <div class="currency-list-wrapper">
+                                    <select name="" id="to-currency-list"></select>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="number" id="to" class="input-field">
+                    </div>
+                </div>
+                <div class="converter-terminal">
+                    <label for="terminal">Terminal</label>
+                    <input type="text" id="terminal" class="input-field">
+                    <button id="terminal-button">Complete</button>
+                </div>
+            </div>
+            <div class="rates">
+                <div class="rates-header">
+                    <div class="rates-label">
+                        <label for="">Exchange rates</label>
+                        <div class="basic-currency"></div>
+                    </div>
+                    <table>
+                        <tr>
+                            <td class="header-currency">Currency</td>
+                            <td class="header-equivalent">Amount</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="rates-wrapper">
+                    <table class="rates-list"></table>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

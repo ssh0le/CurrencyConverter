@@ -1,0 +1,213 @@
+body,html {
+    margin: 0;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 10vh;
+    background-color: rgb(126, 126, 213);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+header  {
+    font-size: 2.5rem;
+    color: white;
+}
+
+header select {
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
+.main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.main {
+    display: flex;
+    font-size: 3rem;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+}
+
+.converter {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-around;
+}
+
+.converter label {
+    padding-bottom: 10px;
+}
+
+.common-converter select {
+    font-size: 1.9rem;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.currency {
+    width: 45%;
+}
+
+.currency-list-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.input-field {
+    width: 100%;
+    border-radius: 10px;
+    border-width: 1px;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: 2rem;
+    padding: 3px 10px;
+}
+
+.converter-terminal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.converter-terminal label {
+    min-width: 100%;
+}
+
+.converter-terminal button {
+    font-size: 2rem;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+#terminal {
+    width: 70%;
+}
+
+.common-converter {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    display: block;
+}
+
+.currency-label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rates {
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    height: 60%;
+}
+
+.rates-header{
+    text-align: center;
+    height: 15%;
+}
+
+.rates-label{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.currency-rate {
+    font-size: 2rem;
+}
+
+.rates-header table {
+    width: 100%;
+}
+
+.header-currency, .currency-abbr {
+    width: 40%;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.header-equivalent, .currency-equivalent {
+    width: 50%;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.rates-wrapper {
+    width: 100%;
+    overflow: auto;
+    height: 80%;
+}
+
+.rates-list {
+    width: 100%;
+    height: 80%;
+}
+
+.currency-rate:nth-child(2n) {
+    background-color: rgb(242, 225, 239);
+}
+
+.rates-header {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.from-currency, .to-currency {
+    display: flex;
+    font-size: 1.8rem;
+}
+
+.common-converter .currency-abbr {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    html, body {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 9px;
+    }
+    .main {
+        flex-wrap: wrap;
+        font-size: 2.5rem;
+    }
+
+    .converter {
+        min-width: 90%;
+        height: 40%;
+    }
+
+    .rates {
+        width: 90%;
+        height: 40%;
+    }
+
+    .common-converter select {
+        font-size: 1.7rem;
+    }
+}
